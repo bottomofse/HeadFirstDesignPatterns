@@ -15,6 +15,7 @@ namespace Chapter2_Observer
         public CurrentConditionsDisplay(WeatherData weatherData)
         {
             this.weatherData = weatherData;
+            weatherData.registerObserver(this);
         }
 
         public void display()
